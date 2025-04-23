@@ -1,24 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>DeviaGPT - Criminology Chatbot</title>
-    <style>
-        body { font-family: sans-serif; background: #f5f5f5; padding: 0; margin: 0; }
-        #chat { max-width: 600px; margin: 40px auto; background: white; border-radius: 8px; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
-        .message { padding: 10px 0; border-bottom: 1px solid #eee; }
-        .user { font-weight: bold; color: #0077cc; }
-        .bot { font-style: italic; color: #333; }
-        input[type="text"] { width: 80%; padding: 10px; font-size: 16px; }
-        button { padding: 10px 15px; font-size: 16px; }
-    </style>
+  <title>Criminology Theory App</title>
 </head>
 <body>
-    <div id="chat">
-        <div id="messages"></div>
-        <input type="text" id="userInput" placeholder="Type your answer..." />
-        <button onclick="sendMessage()">Send</button>
-    </div>
-    <script src="script.js"></script>
+  <h1>Apply Criminological Theory to a Fictional Character</h1>
+
+  <label for="characterInput">Character Name:</label>
+  <input type="text" id="characterInput" placeholder="e.g. Walter White">
+
+  <label for="theorySelect">Select a Theory:</label>
+  <select id="theorySelect">
+    <option value="Strain Theory">Strain Theory</option>
+    <option value="Social Learning Theory">Social Learning Theory</option>
+    <option value="Social Bond Theory">Social Bond Theory</option>
+    <option value="Labeling Theory">Labeling Theory</option>
+    <option value="Routine Activities Theory">Routine Activities Theory</option>
+  </select>
+
+  <br><br>
+  <button onclick="analyzeCharacter()">Analyze</button>
+  <button onclick="searchWikipedia()">Search Wikipedia</button>
+
+  <h2>Result:</h2>
+  <pre id="output"></pre>
+
+  <script src="script.js"></script>
 </body>
 </html>
