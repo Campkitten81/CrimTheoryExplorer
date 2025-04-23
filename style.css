@@ -1,73 +1,57 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background: #fff8f2;
-  color: #2e2e2e;
-  margin: 0;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+  color: #2c2c2c;
+  padding: 40px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #1a1a1a;
+  text-shadow: 2px 2px #ffffff;
+}
+
+label, select, input {
+  font-size: 1.2em;
+  margin: 10px;
+}
+
+input, select {
+  padding: 10px;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  background-color: #fff8f8;
+  width: 250px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  background-color: #ff6f61;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #e63e3a;
+}
+
+#output {
+  margin-top: 20px;
   padding: 20px;
-  max-width: 600px;
+  border: 2px dashed #4a4a4a;
+  background-color: #ffffffcc;
+  font-family: monospace;
+  white-space: pre-wrap;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
-}
-h1 {
-  background-color: #e60012;
-  color: white;
-  padding: 15px;
-  text-align: center;
-  font-size: 2em;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-  margin-bottom: 20px;
-}
-textarea,
-input[type="text"],
-input[type="number"] {
-  width: 100%;
-  padding: 12px;
-  margin: 10px 0;
-  box-sizing: border-box;
-  border: 2px solid #ccc;
-  border-radius: 6px;
-  font-size: 1em;
-}
-textarea:focus,
-input[type="text"]:focus,
-input[type="number"]:focus {
-  border-color: #0078d7;
-  outline: none;
-  box-shadow: 0 0 5px rgba(0, 120, 215, 0.3);
-}
-button {
-  background-color: #0078d7;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 6px;
-  font-size: 1em;
-  cursor: pointer;
-  margin-top: 10px;
-  width: 100%;
-}
-button:hover {
-  background-color: #005ea6;
-}
-pre {
-  background-color: #f4f4f4;
-  padding: 15px;
-  border-left: 4px solid #e60012;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  border-radius: 6px;
-}
-.success-message {
-  background-color: #e8f5e9;
-  border-left: 4px solid #4caf50;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 4px;
-}
-ul {
-  padding-left: 20px;
-}
-ul li {
-  margin-bottom: 5px;
+  color: #1f1f1f;
 }
